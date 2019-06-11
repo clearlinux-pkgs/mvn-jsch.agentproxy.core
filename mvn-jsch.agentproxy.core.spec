@@ -4,10 +4,11 @@
 #
 Name     : mvn-jsch.agentproxy.core
 Version  : 0.0.7
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/com/jcraft/jsch.agentproxy.core/0.0.7/jsch.agentproxy.core-0.0.7.jar
 Source0  : https://repo1.maven.org/maven2/com/jcraft/jsch.agentproxy.core/0.0.7/jsch.agentproxy.core-0.0.7.jar
 Source1  : https://repo1.maven.org/maven2/com/jcraft/jsch.agentproxy.core/0.0.7/jsch.agentproxy.core-0.0.7.pom
+Source2  : https://repo1.maven.org/maven2/com/jcraft/jsch.agentproxy/0.0.7/jsch.agentproxy-0.0.7.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -35,6 +36,9 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentpr
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.7
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.7
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy/0.0.7
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy/0.0.7
+
 
 %files
 %defattr(-,root,root,-)
@@ -43,3 +47,4 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/jcraft/jsch.agentpr
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.7/jsch.agentproxy.core-0.0.7.jar
 /usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.7/jsch.agentproxy.core-0.0.7.pom
+/usr/share/java/.m2/repository/com/jcraft/jsch.agentproxy/0.0.7/jsch.agentproxy-0.0.7.pom
